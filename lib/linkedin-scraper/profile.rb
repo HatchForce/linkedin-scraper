@@ -19,6 +19,7 @@ module Linkedin
     def initialize(url)
       @linkedin_url = url
       @page         = http_client.get(url)
+      p @page
     end
 
     def name
